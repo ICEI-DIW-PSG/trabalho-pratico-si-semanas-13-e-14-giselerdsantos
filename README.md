@@ -18,6 +18,6 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 Implementação de um calendário interativo com a biblioteca FullCalendar, exibindo artigos e banners cadastrados via API com datas e cores distintas. Os eventos redirecionam para a página de detalhes ao serem clicados.
 
-![Print do calendário com artigo](assets/images/calendarioartigos.png)
-![Print do calendário com banner](assets/images/calendariobanners.png)
+![Print do calendário com artigo](public/assets/images/calendarioartigos.png)
+![Print do calendário com banner](public/assets/images/calendariobanners.png)
 
