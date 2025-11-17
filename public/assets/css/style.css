@@ -429,5 +429,49 @@ footer {
   background-color: #0056b3;
 }
   
+#calendar {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.fc-toolbar-title {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fc-button {
+  background-color: #8b0000;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.fc-button:hover {
+  background-color: #a30000;
+}
+
+.fc-daygrid-day-number {
+  color: #fff;
+  font-weight: bold;
+}
+
+.fc-event {
+  font-size: 0.9rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  color: #fff;
+}
 
 }

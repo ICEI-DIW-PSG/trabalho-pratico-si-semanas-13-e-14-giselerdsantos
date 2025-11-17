@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendário de Publicações | The Advocate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+  
+  <nav>
+    <ul class="menu">
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="visualizacao.html">Calendário</a></li>
+    </ul>
+    <form class="search-form" onsubmit="buscar(event)">
+      <input class="input-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar...">
+    </form>
+  </nav>
+
+  <!-- Logo -->
+  <header class="cabecalho">
+    <a href="../../index.html">
+      <img src="../images/logotheadvocatesemfundo.png" alt="banner inicial" width="300">
+    </a>
+  </header>
+
+  <!-- Calendário -->
+  <main>
+    <h1 id="titulo">Calendário de Publicações</h1>
+    <div id="calendar"></div>
+  </main>
+
+ 
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <p>&copy; 2025 The Advocate. Todos os direitos reservados.</p>
+      <p class="frase-final">"Toda verdade enterrada um dia floresce."</p>
+      <div class="assinatura-aluno">
+        <img src="../images/eu.jpg" alt="foto" class="avatar-aluno">
+        <div class="dados-aluno">
+          <h4>Gisele Santos</h4>
+          <p>Análise e Desenvolvimento de Sistemas – 1º semestre PUC MINAS - São Gabriel</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const calendarEl = document.getElementById('calendar');
+
+      function formatarData(data) {
+        if (!data || !data.includes('-')) return null;
+        const [dia, mes, ano] = data.split('-');
+        return `${ano}-${mes}-${dia}`;
+      }
+
+      async function carregarEventos() {
+        try {
+          const resArtigos = await fetch('http://127.0.0.1:3001/artigos');
+          const resBanners = await fetch('http://127.0.0.1:3001/banners');
+
+          const artigos = await resArtigos.json();
+          const banners = await resBanners.json();
+
+          const eventos = [];
+
+          artigos.forEach(a => {
+            const dataFormatada = formatarData(a.data);
+            if (dataFormatada) {
+              eventos.push({
+                title: a.titulo,
+                start: dataFormatada,
+                color: '#0077cc',
+                url: `../../detalhes.html?id=${a.id}`
+              });
+            }
+          });
+
+          banners.forEach(b => {
+            const dataFormatada = formatarData(b.data);
+            if (dataFormatada) {
+              eventos.push({
+                title: b.titulo,
+                start: dataFormatada,
+                color: '#cc7700',
+                url: `../../detalhes.html?id=${b.id}`
+              });
+            }
+          });
+
+          const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            locale: 'pt-br',
+            headerToolbar: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,listWeek'
+            },
+            events: eventos,
+            eventClick: function(info) {
+              info.jsEvent.preventDefault();
+              if (info.event.url) {
+                window.location.href = info.event.url;
+              }
+            }
+          });
+
+          calendar.render();
+        } catch (error) {
+          console.error('Erro ao carregar eventos:', error);
+        }
+      }
+
+      carregarEventos();
+    });
+  </script>
+
+  <script src="../../scripts/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
