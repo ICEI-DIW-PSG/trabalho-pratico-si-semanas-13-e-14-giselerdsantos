@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Advocate</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Menu + Pesquisa -->
+  <nav>
+    <ul class="menu">
+      <li><a href="assets/html/cadastro.html">Cadastro</a></li>
+      <li><a href="index.html">Início</a></li>
+    </ul>
+
+    <form class="search-form" onsubmit="buscar(event)">
+  <input class="input-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar...">
+</form>
+  </nav>
+
+  <!-- Logo -->
+  <header class="cabecalho">
+    <a href="index.html">
+      <img src="assets/images/logotheadvocatesemfundo.png" alt="banner inicial" width="300">
+    </a>
+  </header>
+
+<div class="carousel-wrapper">
+  <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="carousel-content"></div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</div>
+
+  <!-- Cards -->
+  <section class="destaques">
+  <div id="container-cards"></div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+  <div class="rodape-conteudo">
+    <p>&copy; 2025 The Advocate. Todos os direitos reservados.</p>
+    <p class="frase-final">"Toda verdade enterrada um dia floresce."</p>
+
+    <div class="assinatura-aluno">
+      <img src="assets/images/eu.jpg" alt="Foto de Gisele Silva" class="avatar-aluno">
+      <div class="dados-aluno">
+        <h4>Gisele Santos</h4>
+        <p>Análise e Desenvolvimento de Sistemas – 1ºsemestre PUC MINAS - São Gabriel</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const container = document.getElementById("container-cards");
+
+  fetch("http://localhost:3001/artigos")
+    .then(res => res.json())
+    .then(dados => {
+      dados.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "bloco";
+        card.innerHTML = `
+          <img src="${item.imagem}" alt="${item.titulo}">
+          <h3>${item.titulo}</h3>
+          <p>${item.descricao}</p>
+          <a href="detalhes.html?id=${item.id}" class="btn">LEIA MAIS</a>
+        `;
+        container.appendChild(card);
+      });
+    });
+</script>
+<script src="assets/scripts/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro | The Advocate</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navegação -->
+     <nav>
+    <ul class="menu">
+      <li><a href="assets/html/cadastro.html">Cadastro</a></li>
+      <li><a href="../../index.html">Início</a></li>
+    </ul>
+
+    <form class="search-form" onsubmit="buscar(event)">
+  <input class="input-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar...">
+</form>
+  </nav>
+
+
+  <!-- Logo -->
+  <div class="logo-site">
+    <img src="../images/logotheadvocatesemfundo.png" alt="Logo The Advocate" width="300">
+  </div>
+
+  <!-- Formulário de cadastro -->
+ <section class="formulario-cadastro">
+  <h2>Cadastre-se</h2>
+  <form id="form-cadastro">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</section>
+  <!-- Footer -->
+  <footer class="rodape">
+    <p>&copy; 2025 The Advocate. Todos os direitos reservados.</p>
+    <p class="frase-final">"Mesmo os deuses precisam de leitores atentos."</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../scripts/app.js"></script>"></script>
+</body>
+</html>

@@ -1,18 +1,151 @@
 {
-  "usuarios": [
+  "artigos": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "titulo": "A verdade enterrada sob o Olimpo",
+      "descricao": "Sob os mármores dourados do Olimpo, há segredos que sustentam o poder — e silêncios que o protegem.",
+      "conteudo": "<p>O Olimpo brilha. Mármore, ouro, trovões e glória. Mas sob seus pilares, há histórias que não foram contadas — e vozes que nunca foram ouvidas.</p><p>Cada estátua esconde um silêncio. Cada mito, uma versão oficial. E cada deus, um papel cuidadosamente esculpido para manter a ordem.</p><p>Este artigo não busca destruir o Olimpo — apenas escavar. Porque às vezes, o que sustenta o poder não é a verdade... mas o medo de revelá-la.</p><p>Enquanto os mortais veneram os deuses, poucos se perguntam quem molda os mitos que sustentam essa veneração. Há documentos ocultos, pactos silenciosos e histórias enterradas sob os salões dourados.</p><p>Investigar o Olimpo é como abrir um baú trancado por séculos. E o que encontramos não é apenas poeira — é poder, manipulação e escolhas que definiram o destino dos mundos.</p><p>A verdade não é uma ameaça. É uma luz. E mesmo que ela ofusque os deuses, ela também pode libertar os mortais.</p>",
+      "autor": "Persefone Dimitriou",
+      "data": "01-01-2025",
+      "imagem": "assets/images/olimposoterrado.png",
+      "destaque": true,
+      "categoria": "Investigação",
+      "local": "Olimpo"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "titulo": "O trono que silencia",
+      "descricao": "Zeus governa com autoridade incontestável. Mas será que o silêncio dos outros deuses é reverência... ou receio?",
+      "conteudo": "<p>No Olimpo, há um trono que ninguém ousa contestar. Zeus, senhor dos céus e do raio, reina com autoridade absoluta — não apenas pela força de seus trovões, mas pela ordem que impõe ao cosmos.</p><p>Mas o que acontece quando o poder é tão grande que ninguém se atreve a questioná-lo? Quando o silêncio dos que o cercam não é respeito, mas medo? O trono de Zeus não é apenas um símbolo de liderança — é um lembrete de que até os deuses podem ser reféns da própria hierarquia.</p><p>Conversamos com fontes próximas ao Conselho Olímpico, que revelaram que decisões são tomadas sem consulta, e que a palavra final de Zeus raramente é debatida. “Ele não precisa levantar a voz”, disse uma fonte. “O silêncio ao redor dele já diz tudo.”</p><p>Este artigo não busca deslegitimar o trono, mas lançar luz sobre o que ele representa. Porque onde há silêncio absoluto, pode haver ausência de diálogo — e onde não há diálogo, não há democracia, nem mesmo entre os imortais.</p>",
+      "autor": "Persefone Dimitriou",
+      "data": "07-02-2025",
+      "imagem": "assets/images/zeus.png",
+      "destaque": true,
+      "categoria": "Política",
+      "local": "Monte Olimpo"
+    },
+    {
+      "id": "3",
+      "titulo": "Agon: O Campeonato dos Deuses",
+      "descricao": "No Agon, os escolhidos sangram enquanto os deuses assistem. Mas será que a glória é deles... ou de quem os controla?",
+      "conteudo": "<p>No Olimpo, a glória não é concedida — é disputada. O Agon, campeonato sagrado dos deuses, não é apenas um torneio: é um ritual de poder, onde os escolhidos sangram para entreter quem já reina.</p><p>O evento é celebrado como honra, mas por trás das coroas e aplausos há regras que poucos compreendem. Quem define os campeões? Quem escreve os desafios? E quem lucra com o espetáculo?</p><p>Fontes revelam que os deuses não competem por necessidade, mas por narrativa. Cada vitória reforça um mito, cada derrota reescreve uma história. E os espectadores — mortais e imortais — consomem essas batalhas como verdades absolutas.</p><p>O Agon revela mais do que habilidade: revela o sistema. Porque quando os deuses competem, não é apenas por glória — é por controle da memória, da história e do mito.</p><p>Este artigo investiga os bastidores do campeonato, os interesses ocultos e os silêncios que sustentam o espetáculo. Porque até mesmo entre os deuses, há quem lute... e há quem manipule a luta.</p>",
+      "autor": "Persefone Dimitriou",
+      "data": "22-03-2025",
+      "imagem": "assets/images/agoncampeonato.png",
+      "destaque": false,
+      "categoria": "Cultura",
+      "local": "Templo de Atena"
+    },
+    {
+      "id": "4",
+      "titulo": "Olhos que desafiam o poder",
+      "descricao": "Medusa não era um monstro — ela foi transformada em um.",
+      "conteudo": "<p>Antes de virar símbolo de terror, Medusa era uma mulher com beleza e força. Violada por Poseidon no templo de Atena, ela foi punida não pelo que fez, mas por existir — e por ter sido vista.</p><p>Atena, deusa da sabedoria, transformou Medusa em um monstro. Mas a verdadeira monstruosidade não estava em seus cabelos de serpente, e sim no sistema que preferiu punir a vítima para preservar a ordem divina.</p><p>O olhar de Medusa petrifica não por maldição, mas por resistência. Ela é o reflexo do medo que o poder tem da mulher que não se curva, que encara de frente, que não se cala.</p><p>Este artigo revisita o mito sob uma nova luz: a de quem ousa questionar a narrativa oficial. Porque talvez Medusa nunca tenha sido o monstro — mas sim o espelho que revela quem realmente são os deuses que a condenaram.</p>",
+      "autor": "Persefone Dimitriou",
+      "data": "15-04-2025",
+      "imagem": "assets/images/medusa.png",
+      "destaque": false,
+      "categoria": "História",
+      "local": "Templo de Atena",
+      "impacto": "Alto",
+      "envolvidos": "Medusa, Poseidon, Atena"
+    }
+  ],
+  "banners": [
+    {
+      "id": "b1",
+      "titulo": "Afrodite nas ondas",
+      "descricao": "Beleza e desejo emergem do mar.",
+      "conteudo": "<p>Afrodite nasceu da espuma do mar, mas sua essência vai além da beleza. Ela é desejo, transformação e poder silencioso. Onde ela passa, corações se agitam e verdades ocultas vêm à tona.</p><p>Este banner celebra a deusa que não pede permissão para existir. Ela surge das águas como um lembrete de que o amor pode ser força — e que o desejo, quando livre, é revolução.</p><p>Afrodite não é apenas um rosto encantador. Ela é o movimento das marés, a dança dos corpos, a coragem de sentir. E nas ondas que a trouxeram, ainda ecoa o chamado para que todos se permitam florescer.</p>",
+      "imagem": "assets/images/bannerafrodite.png",
+      "autor": "Persefone Dimitriou",
+      "data": "01-05-2025"
+    },
+    {
+      "id": "b2",
+      "titulo": "Atena em batalha",
+      "descricao": "Sabedoria e estratégia em meio ao caos.",
+      "conteudo": "<p>Atena não luta por glória, mas por justiça. Em meio ao caos, ela ergue a razão como escudo e a estratégia como espada. Sua presença nas batalhas não é marcada por gritos, mas por decisões que mudam o curso da guerra.</p><p>Enquanto outros deuses buscam poder pela força, Atena constrói influência pela inteligência. Ela observa, calcula, age. E quando intervém, o impacto é profundo — não apenas no campo de batalha, mas na mente dos que a seguem.</p><p>Este banner revela a deusa que não se impõe pela brutalidade, mas pela clareza. Porque em tempos de conflito, a sabedoria é a arma mais rara — e Atena, sua guardiã silenciosa.</p>",
+      "imagem": "assets/images/banneratenas.png",
+      "autor": "Persefone Dimitriou",
+      "data": "03-05-2025"
+    },
+    {
+      "id": "b3",
+      "titulo": "Hermes entre mundos",
+      "descricao": "Mensageiro de verdades que ninguém quer ouvir.",
+      "conteudo": "<p>Hermes cruza fronteiras invisíveis, levando mensagens que mudam destinos. Ele não pertence a um único reino — transita entre o céu, a terra e o submundo com leveza e astúcia.</p><p>Mas suas mensagens nem sempre são bem-vindas. Ele carrega verdades que os deuses preferem esconder e revelações que os mortais não estão prontos para ouvir. Hermes não apenas comunica — ele provoca.</p><p>Este banner é um tributo ao deus que não teme o desconhecido. Que caminha entre mundos, entre versões, entre silêncios. Porque às vezes, o que transforma não é o grito — é a palavra sussurrada no momento certo.</p>",
+      "imagem": "assets/images/bannerhermes.png",
+      "autor": "Persefone Dimitriou",
+      "data": "05-05-2025"
+    },
+    {
+      "id": "b4",
+      "titulo": "Hades e Perséfone",
+      "descricao": "Entre sombras e flores, Hades e Perséfone selam o equilíbrio dos mundos.",
+      "conteudo": "<p>Por muito tempo, pintaram Hades como o senhor das trevas, frio e implacável. Mas o que poucos sabem — ou escolhem ignorar — é que foi ao lado dele que encontrei espaço para florescer.</p><p>Nos campos do submundo, onde dizem que nada cresce, ele me ofereceu silêncio, respeito e tempo. Não fui raptada. Fui acolhida. E juntos, criamos um ciclo que conecta vida e morte, luz e sombra, primavera e recolhimento.</p><p>Este texto não é uma defesa. É uma celebração. Porque amar Hades é entender que o poder não precisa ser estrondoso para ser profundo. E que há beleza na escuridão — quando ela é compartilhada com alguém que te vê por inteiro.</p><p>Entre sombras e flores, selamos um pacto que não é prisão, mas escolha. E é nessa escolha que mora o verdadeiro equilíbrio dos mundos.</p>",
+      "imagem": "assets/images/bannerhadesepersefone.png",
+      "autor": "Persefone Dimitriou",
+      "data": "07-05-2025"
+    },
+    {
+      "id": "b5",
+      "titulo": "Nova Atenas na primavera",
+      "descricao": "Flores, mármore e sabedoria sob o céu dourado.",
+      "conteudo": "<p>Na primavera, Atenas se cobre de flores e memória. O mármore aquece sob o sol, e os corredores antigos se enchem de vozes novas. Há perfume no ar e ideias nos olhos.</p><p>As praças voltam a pulsar, os debates ganham ritmo, e até os deuses parecem caminhar mais devagar, como se escutassem. É uma estação que não apenas colore — ela convida.</p><p>Voltar a Atenas nessa época é como reencontrar uma versão mais leve de si mesma. E entre as pétalas e os livros abertos, tudo parece possível.</p>",
+      "imagem": "assets/images/bannernovaatenasprimavera.png",
+      "autor": "Persefone Dimitriou",
+      "data": "09-05-2025"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "80cc",
+      "nome": "Gisele Rodrigues",
+      "email": "giseleszrodriguesz@hotmail.com",
+      "senha": "GISELETESTE"
+    },
+    {
+      "id": "38af",
+      "nome": "Fulana Detown",
+      "email": "fulanadetown@gmail.com",
+      "senha": "FulanaThedown"
+    },
+    {
+      "id": "a83d",
+      "nome": "Fulana Detown",
+      "email": "fulanadetown@gmail.com",
+      "senha": "FulanaThedown"
+    },
+    {
+      "id": "5302",
+      "nome": "Fulana The Town",
+      "email": "fulanathetown@gmail.com",
+      "senha": "FulanatHEROWN"
+    },
+    {
+      "id": "7ecb",
+      "nome": "Fulana The Town",
+      "email": "fulanathetown@gmail.com",
+      "senha": "FulanatHEROWN"
+    },
+    {
+      "id": "f005",
+      "nome": "Fulana The Town",
+      "email": "fulanathetown@gmail.com",
+      "senha": "FulanaThetown"
+    },
+    {
+      "id": "e9e8",
+      "nome": "Fulana The Town",
+      "email": "fulana123@gmail.com",
+      "senha": "Fulana123"
+    },
+    {
+      "id": "b3c7",
+      "nome": "Gemso da silva",
+      "email": "gemeosislva@gmail.com",
+      "senha": "gemeos"
     }
   ]
 }
