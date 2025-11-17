@@ -9,15 +9,15 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: GISELE RODRIGUES DOS SANTOS
+- Matricula: 903350
+- Proposta de projeto escolhida: Organizações e Equipes, pois o The Advocate é um jornal fictício, ideia que retirei de um livro, que funciona como uma organização.
+- Breve descrição sobre seu projeto: É um site fictício do jornal The Advocate, inspirado no livro de Hades e Persefone. O jornal atua como uma organização em Nova Atenas, publicando matérias investigativas, críticas e análises sobre os acontecimentos da cidade, revelando conspirações, disputas de poder entre os deuses e a influência deles sobre os mortais, conectando o leitor ao universo da obra de forma imersiva e narrativa.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Implementação de um calendário interativo com a biblioteca FullCalendar, exibindo artigos e banners cadastrados via API com datas e cores distintas. Os eventos redirecionam para a página de detalhes ao serem clicados.
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+![Print do calendário com artigo](../images/calendarioartigos.png)
+![Print do calendário com banner](../images/calendariobanners.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
